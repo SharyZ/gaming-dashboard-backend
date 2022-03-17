@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -160,3 +162,7 @@ SIMPLE_JWT = {
 # Auth
 
 AUTH_USER_MODEL = 'users.User'
+
+# Url ends with slash
+
+APPEND_SLASH = False
